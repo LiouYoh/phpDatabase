@@ -1,0 +1,29 @@
+print_r($arraydata);
+I got output
+
+Array ( [0] => vikas [1] => shirt [2] => cloth1 [3] => test [4] => shirt [5] => cloth2 [6] => avi )
+
+i need to show array like that
+
+$arr = array("vikas","shirt","cloth1","test","shirt","cloth2","avi");
+
+php arrays
+shareimprove this question
+asked Jul 18 '12 at 20:25
+
+The Code Developer
+2,0282256
+2	 	
+Similar topic here – ODelibalta Jul 18 '12 at 20:28
+1	 	
+echo implode($arraydata, ','); – Marc B Jul 18 '12 at 20:28
+add a comment
+2 Answers
+active oldest votes
+up vote
+8
+down vote
+accepted
+Use this :
+
+echo '$arr = array("'.implode('", "', $arraydata).'");';
